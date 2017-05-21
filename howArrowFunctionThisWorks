@@ -1,0 +1,19 @@
+var addFn = (a,b) => a+b
+var obj = {a:100,b:200,fn:()=>addFn(this.x,this.y)}
+obj
+var Num = function(x,y) {this.x = x,this.y=y this.obj = obj}
+var Num = function(x,y) {this.x = x;this.y=y;this.obj = obj}
+var num1 = Num(23,24)
+num1
+num1
+var num1 = new Num(23,24)
+num1
+num1.fn
+num1.obj
+num1.obj.fn()
+var obj = {a:100,b:200,fn:function(){addFn(this.x,this.y)}}
+var num1 = new Num(23,24)
+num1.obj.fn()
+num1.obj.fn()
+num1.obj.fn
+num1.obj.fn()
