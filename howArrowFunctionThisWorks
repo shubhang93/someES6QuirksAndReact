@@ -10,10 +10,13 @@ var num1 = new Num(23,24)
 num1
 num1.fn
 num1.obj
-num1.obj.fn()
+num1.obj.fn() // 47
 var obj = {a:100,b:200,fn:function(){addFn(this.x,this.y)}}
 var num1 = new Num(23,24)
 num1.obj.fn()
 num1.obj.fn()
 num1.obj.fn
-num1.obj.fn()
+num1.obj.fn() // undefined
+
+// Inside arrow functions there is not default binding of the this, where as in normal functions this is bound the function inside which
+this is used. 
