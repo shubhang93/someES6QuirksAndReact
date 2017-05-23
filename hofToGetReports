@@ -1,0 +1,55 @@
+var url = "www.ssss/byBrand"
+url
+var params = [{from:'12-05-2015'}, {to: '13-05-2015'}]
+var esc = encodeURIComponent;
+esc
+esc.toString
+esc.toString()
+checkThis = function() {
+this.a = 100
+}
+checkThis.toString()
+checkThis = function() {
+this.calc = function() {
+  return 200
+  }
+console.log(this.calc())
+}
+checkThis()
+var R = require('ramda')
+R
+R.trim('Shubhang ssss')
+R.trim('  Shubhang ssss  ')
+R.trim(' Shubhang ssss')
+var getReports = function(reportMapping) {
+    return function(reportType) {
+          return reportMapping[reportType]()
+          }
+    }
+}
+
+
+var getReports = function(reportMapping) {
+    return function(reportType) {
+          return reportMapping[reportType]()
+          }
+    }
+}
+
+
+var getReports = function(reportMapping) {
+return function(reportType) {
+  return reportMapping[reportType]()
+  }
+}
+getReports
+var byBrand = function() { return Promise.resolve("By Brand")}
+var byCat = function() { return Promise.resolve("By Cat")}
+var reportMapping = {byBrand: byBrand, byCat: byCat}
+reportMapping
+var getReportType = getReports(reportMapping)
+getReportType
+getReportType('byBrand')
+getReportType('byBrand').then(resp => console.log(resp))
+
+.

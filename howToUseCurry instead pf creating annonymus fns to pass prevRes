@@ -1,0 +1,13 @@
+var fn = undefined||()=>"Hello"
+var fn = undefined?()=>"Hello":()=>"World"
+fn
+fn()
+var obj = [{name:'S'}, {name:'X'}]
+var R = require('ramda')
+var mapFn  = (item) => ({name:item.name, label:item.name})
+var filterFnWithMod = (mod, prevRes) => R.filter((e) => e.name === mod)(prevRes)
+R.pipe(R.map(mapFn), (prevRes) => filterFnWithMod('S', prevRes))
+R.pipe(R.map(mapFn), (prevRes) => filterFnWithMod('S', prevRes))(obj)
+R.pipe(R.map(mapFn), (prevRes) => filterFnWithMod('X', prevRes))(obj)
+var filterFnWithMod = R.curry((mod, prevRes) => R.filter((e) => e.name === mod)(prevRes))
+R.pipe(R.map(mapFn), filterFnWithMod('X'))(obj)

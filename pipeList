@@ -1,0 +1,13 @@
+var pipeL = function(initialVal) = fnArray.reduce(function(acc,fn){return fn(acc)}, initialValue)
+var pipeL = function(initialVal) = {return fnArray.reduce(function(acc,fn){return fn(acc)}, initialValue) }
+var pipeL = function(initialVal){return fnArray.reduce(function(acc,fn){return fn(acc)}, initialValue)}
+pipeL
+var R = require('ramda')
+var filtersList = [R.filter((e)=>e%2), R.filter((e)=>e>2)]
+var pipeL = function(fnArray, initialVal){return fnArray.reduce(function(acc,fn){return fn(acc)}, initialValue)}
+var pipeL = function(fnArray, initialVal){return fnArray.reduce(function(acc,fn){return fn(acc)}, initialVal)}
+pipeL(filtersList,[24,56,32,12,55,33,22])
+var filtersList = [R.filter((e)=>e%2===0), R.filter((e)=>e>2)]
+pipeL(filtersList,[24,56,32,12,55,33,22])
+pipeL(filtersList,[24,56,32,12,55,3,2,1])
+pipeL(filtersList,[24,56,32,12,55,33,22])

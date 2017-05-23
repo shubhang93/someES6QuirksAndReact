@@ -1,0 +1,17 @@
+var obj = {a:['X'], b: 'path'}
+let{a, b}
+let{a, b} = obj
+a
+b
+var obj = {props:{a:['X'], b: 'path'}}
+var obj = {props:{c:['X'], d: 'path'}}
+var{props:{c}, props: {d}} = obj
+c
+d
+var moment = require('moment')
+moment().startOf('month')
+moment().startOf('month').format('DD-MM-YYYY')
+moment().endOf('month').format('DD-MM-YYYY')
+moment().add(3)
+moment().add(3, 'days')
+moment().add(1, 'months')

@@ -1,0 +1,16 @@
+var fn =
+var fn = function(){this.babe="Babe"}
+fn
+var printBabe = function() {console.log(this.babe) }
+var printBabe()
+printBabe
+printBabe()
+boundFn = printBabe.bind(fn)
+boundFn()
+boundFn.toString()
+boundFn()
+var fnBound = fn.bind(this)
+fnBound()
+var boundBabe = printBabe.bind(this)
+boundBabe
+boundBabe()
